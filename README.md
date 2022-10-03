@@ -11,4 +11,4 @@ This application implements work with:
  * open API [openweathermap](https://openweathermap.org/api/hourly-forecast)
  * HTTP requests
  * [BLoC](https://pub.dev/packages/flutter_bloc) for state management
-App layout taken from public [source](https://fabrx.co/moood-music-app-ui-kit/).
+
