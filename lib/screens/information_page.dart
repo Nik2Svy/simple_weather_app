@@ -130,7 +130,9 @@ class BodyInfoPage extends StatelessWidget {
         );
       }
       if (state is CityWeatherErrorState) {
-        return mySnackBar(context, state.exception);
+        //return mySnackBar(context, state.exception);
+
+        return showAlertDialog(context, state.exception);
       }
       return const SizedBox();
     });
