@@ -57,7 +57,7 @@ class _SelectionPageState extends State<SelectionPage> {
   }
 
   /// Форма для ввода названия города
-  /// Принимает labelText — текст, который будет отображать в параметре labelText у [InputDecoration]
+  /// Принимает labelText — текст, который будет отображаться в параметре labelText у [InputDecoration]
   /// Возвращает форму для ввода названия города
   textFormField(String labelText) {
     return ConstrainedBox(
@@ -106,7 +106,7 @@ class _SelectionPageState extends State<SelectionPage> {
   }
 
   /// Заполнитель для validator в [TextFormField]
-  /// Если заполненна, то [_isTextFormFieldFull] = true, иначе возвращает строку для оттображения в ошибке
+  /// Если заполненна, то [_isTextFormFieldFull = true], иначе возвращает строку для оттображения в ошибке
   emptyValidator(String? value) {
     if (value!.isEmpty) {
       setState(() {

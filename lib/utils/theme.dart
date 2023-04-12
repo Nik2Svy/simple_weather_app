@@ -4,8 +4,6 @@ import 'constants.dart';
 // Тема всего сайта
 @override
 ThemeData myTheme() => ThemeData(
-      //fontFamily: 'PlayfairDisplay',
-
       colorScheme: ColorScheme.fromSwatch().copyWith(
         primary: kAccentColor,
       ),
@@ -13,7 +11,6 @@ ThemeData myTheme() => ThemeData(
           style: TextButton.styleFrom(
         foregroundColor: kTextColor,
       )),
-
       textTheme: const TextTheme(
         headline3: TextStyle(
           color: kTextColor,

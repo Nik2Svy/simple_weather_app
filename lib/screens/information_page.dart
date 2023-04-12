@@ -18,7 +18,6 @@ class InformationPage extends StatelessWidget {
 
   /// Количество временных меток, отображаемое на странице
   /// Не должно превышать cnt из JSON
-  // static const int numberOfTimestampsInRow = 5;
 
   @override
   Widget build(BuildContext context) {
@@ -130,8 +129,6 @@ class BodyInfoPage extends StatelessWidget {
         );
       }
       if (state is CityWeatherErrorState) {
-        //return mySnackBar(context, state.exception);
-
         return showAlertDialog(context, state.exception);
       }
       return const SizedBox();
@@ -200,7 +197,7 @@ dridDetailedWeather(ListWeather listWeather) {
       dridDetailedWeatherCard(
           'Ощущается как', '${listWeather.main!.feelsLike.toString()}˚C'),
       dridDetailedWeatherCard(
-          'Вероятность осадков', '${listWeather.pop! * 100} %'), //////
+          'Вероятность осадков', '${listWeather.pop! * 100} %'),
       dridDetailedWeatherCard(
           'Скорость ветра', '${listWeather.wind!.speed} м/с'),
       dridDetailedWeatherCard('Влажность', '${listWeather.main!.humidity} %'),
@@ -219,8 +216,6 @@ dridDetailedWeatherCard(String description, String value) {
   return Padding(
     padding: const EdgeInsets.all(18.0),
     child: Container(
-      // height: 100,
-      //width: 100,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: Colors.white,
